@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jackie's Totally Trivial Trivia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<h1>JACKIE'S TOTALLY TRIVIAL TRIVIA</h1>
+
+<div id="timer">
+<h3 id="timer">Time Remaining:<span id="time=remaining"></span></h3>
+</div>
+
+<div id="asked-question"></div>
+
+<div id="containerForSelectedOptions">
+
+<script>
+//true for browser//
+var timeRemaining=0;
+var targetQuestion;
+var timer;
+var answerRight = [];
+var answerWrong = [];
+var noAnswer = [];
+var questionsRemaining = []{
+	q:"what is the largest city in the United States?",
+	answer:["New York", "Los Angeles", "Chicago", "Dallas"],
+	correctAnswer: "New York"
+},{
+	q:"who is the first black millionaire businesswoman?",
+	answer: ["Oprah Winfrey","Esther Roll", "Sara Breedlove","Harriet Tubman"],
+	correctAnswer: "Sara Breedlove aka Madame CJ Walker"
+},{
+	q:"which state flas depicts an eagle that looks confused and distressed?",
+	answer: ["Michigan", "Illinois", "Kansas", "Oregon"],
+	correctAnswer: "Illinois"
+},{
+
+	q:"what is 4 x 4",
+	answer: ["4","18","16","14"],
+	correctAnswer: "16"
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

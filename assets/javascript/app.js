@@ -20,7 +20,6 @@ display results
 reset game
 start over
 
-*/
 
 function incrementTimer(){
  timer = setTimeout(){
@@ -84,6 +83,54 @@ function askQuestion(){
 }
 }
 askQuestion();
+
+*/
+
+var questions = [
+    {
+          question:"what is the largest city in the United States?",
+          answer:["New York", "Los Angeles", "Chicago", "Dallas"],
+          rightAnswer: "New York"
+    },
+{
+          question:"who is the first black millionaire businesswoman?",
+          answer: ["Oprah Winfrey","Esther Roll", "Sara Breedlove","Harriet Tubman"],
+          rightAnswer: "Sara Breedlove aka Madame CJ Walker"
+},
+    {
+          question:"which state flas depicts an eagle that looks confused and distressed?",
+          answer: ["Michigan", "Illinois", "Kansas", "Oregon"],
+          rightAnswer: "Illinois"
+},
+
+    {
+          question:"what is 4 x 4",
+          answer: ["4","18","16","14"],
+          rightAnswer: "16"
+},
+
+];
+
+var answers = ['New York', 'Breedlove', 'Illinois', '16'],
+    data = $('input'),
+    rightAnswer = 0,
+    wrongAnswer = 0,
+    noAnswer = 0,
+    count = [],
+
+    console.log(data);
+
+
+function beginTheGame() {
+  $('data').('display');
+    for(var i = 0; i <data.length; i++){
+
+    }
+
+
+}
+
+
 
 
 

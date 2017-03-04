@@ -13,43 +13,65 @@
 
 </head>
 <body>
+
 <h1>JACKIE'S TOTALLY TRIVIAL TRIVIA</h1>
+
+<button class="start"> The Game Begins.....!!!</button>
+
+<div class="data">
+
+<div class="containerForSelectedOptions">
+
+		<!--Group questions to be answered and tallied-->
+		
+	<form>
+		<p>What is the largest city in the USA?</p>
+		<select name="cities">
+			<option value="New York">New York</option>
+			<option value="Chicago">Chicago</option>
+			<option value="Dallas">Dallas</option>
+			<option value="Los Angeles">Los Angeles</option>
+		</select>
+
+
+		<p>What is the last name of the first black millionaire businesswoman?</p>
+		<select name="lastName">
+			<option value="Winfrey">Winfrey</option>
+			<option value="Roll">Roll</option>
+			<option value="Breedlove">Breedlove</option>
+			<option value="Tubman">Tubman</option>		
+		</select>
+
+
+		<p>Which US state flag depicts an eagle that appears confused and distressed?</p>
+		<select name="flags">
+			<option value="Michigan">Michigan</option>
+			<option value="Illinois">Illinois</option>
+			<option value="Kansas">Kansas</option>
+			<option value="Oregon">Oregon</option>
+		</select>
+
+
+		<p>What is 4 x 4?</p><br>
+		<select name="numSolve">
+			<option value="4">4</option>
+			<option value="18">18</option>
+			<option value="16">16</option>
+			<option value="32">32</option>
+			</select>
+	</form>
+
 
 <div id="timer">
 <h3 id="timer">Time Remaining:<span id="time=remaining"></span></h3>
 </div>
 
-<div id="asked-question"></div>
+<div class="result">
+	
+	</div>
+</div>
 
-<div id="containerForSelectedOptions">
-
-<script>
-//true for browser//
-var timeRemaining=0;
-var targetQuestion;
-var timer;
-var answerRight = [];
-var answerWrong = [];
-var noAnswer = [];
-var questionsRemaining = []{
-	q:"what is the largest city in the United States?",
-	answer:["New York", "Los Angeles", "Chicago", "Dallas"],
-	correctAnswer: "New York"
-},{
-	q:"who is the first black millionaire businesswoman?",
-	answer: ["Oprah Winfrey","Esther Roll", "Sara Breedlove","Harriet Tubman"],
-	correctAnswer: "Sara Breedlove aka Madame CJ Walker"
-},{
-	q:"which state flas depicts an eagle that looks confused and distressed?",
-	answer: ["Michigan", "Illinois", "Kansas", "Oregon"],
-	correctAnswer: "Illinois"
-},{
-
-	q:"what is 4 x 4",
-	answer: ["4","18","16","14"],
-	correctAnswer: "16"
-}
-
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
